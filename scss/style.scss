@@ -1,3 +1,5 @@
+@import "./snowflakes";
+@import "./variables";
 html {
     padding: 0;
     margin: 0;
@@ -635,13 +637,8 @@ html {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+     justify-content: space-between;
+     flex-direction: column;
       height: 162rem;
     }
   }
@@ -652,6 +649,97 @@ html {
     background-size: cover;
     background-position: center;
     border: 2rem groove;
+    position: relative;
   }
-  .header-5
-  /*# sourceMappingURL=style.css.map */
+  .header-5{
+    font-size: 8rem;
+  }
+
+.plan {
+  background-image: url(../mediaa/plane2.png);
+  background-repeat:no-repeat ;
+  display: inline-block;
+  border: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 34vh;
+  width: 28vw;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  border-radius: 5rem; 
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  top: 12rem;
+  @include tablet{
+    height: 22vh;
+    width: 67vw;
+  }
+}
+
+.plan:active {
+  transform: translateY(8px);
+}
+
+
+.plan::after {
+  display: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+
+  
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  top: 50%;
+  left: 50%;
+
+  animation: ripple 0.75s;
+  opacity: 0;
+}
+.plan:focus:not(:active)::after {
+  display: block;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 0.25;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(10);
+  }
+}
+.nav {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #39D7E1;
+  height: 4rem;
+  font-size: 2rem;
+  text-decoration: none;
+} 
+
+.one{
+  text-decoration: none;
+}
+.two{
+  text-decoration: none;
+}
+.three{
+  text-decoration: none;
+}
+.four{
+  text-decoration: none;
+}
+.five{
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
