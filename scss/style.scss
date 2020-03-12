@@ -35,7 +35,7 @@ html {
     line-height: 500px;
     height: 30vh;
     text-align: center;
-    color: #39D7E1;
+    color: black;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -52,7 +52,10 @@ html {
     font-family: 'Sigmar One', cursive;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    color: white;
+  }
+
+  .button-1-1{
+    color:black;
   }
   
   @media (max-width: 375px) {
@@ -658,6 +661,7 @@ html {
 .plan {
   background-image: url(../mediaa/plane2.png);
   background-repeat:no-repeat ;
+  background-size: cover;
   display: inline-block;
   border: none;
   flex-direction: column;
@@ -674,6 +678,10 @@ html {
   @include tablet{
     height: 22vh;
     width: 67vw;
+  }
+  @include phone{
+    height: 20vh;
+    width: 83vw;
   }
 }
 
@@ -721,25 +729,43 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #39D7E1;
+  background-color: black;
   height: 4rem;
   font-size: 2rem;
   text-decoration: none;
+  @include tablet{
+    height: 5rem;
+  font-size: 2rem;
+  }
+  @include phone{
+    height: 5rem;
+  font-size: 1.41rem;
+  }
 } 
 
 .one{
   text-decoration: none;
+  color: white;
+  border: white;
 }
 .two{
   text-decoration: none;
+  color: white;
+  border: white;
 }
 .three{
   text-decoration: none;
+  color: white;
+  border: white;
 }
 .four{
   text-decoration: none;
+  color: white;
+  border: white;
 }
 .five{
   text-decoration: none;
+  color: white;
+  border: white;
 }
 /*# sourceMappingURL=style.css.map */

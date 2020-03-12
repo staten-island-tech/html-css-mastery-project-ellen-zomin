@@ -173,7 +173,7 @@ body {
   line-height: 500px;
   height: 30vh;
   text-align: center;
-  color: #39D7E1;
+  color: black;
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -190,7 +190,10 @@ body {
   font-family: 'Sigmar One', cursive;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  color: white;
+}
+
+.button-1-1 {
+  color: black;
 }
 
 @media (max-width: 375px) {
@@ -803,6 +806,7 @@ body {
 .plan {
   background-image: url(../mediaa/plane2.png);
   background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
   border: none;
   -webkit-box-orient: vertical;
@@ -828,6 +832,13 @@ body {
   .plan {
     height: 22vh;
     width: 67vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .plan {
+    height: 20vh;
+    width: 83vw;
   }
 }
 
@@ -897,29 +908,53 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #39D7E1;
+  background-color: black;
   height: 4rem;
   font-size: 2rem;
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .nav {
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav {
+    height: 5rem;
+    font-size: 1.41rem;
+  }
+}
+
 .one {
   text-decoration: none;
+  color: white;
+  border: white;
 }
 
 .two {
   text-decoration: none;
+  color: white;
+  border: white;
 }
 
 .three {
   text-decoration: none;
+  color: white;
+  border: white;
 }
 
 .four {
   text-decoration: none;
+  color: white;
+  border: white;
 }
 
 .five {
   text-decoration: none;
+  color: white;
+  border: white;
 }
 /*# sourceMappingURL=style.css.map */
