@@ -76,7 +76,7 @@ html {
   
   @media (max-width: 375px) {
     .section-2 {
-      height: 110vh;
+      height: 112vh;
     }
   }
   
@@ -90,12 +90,11 @@ html {
     font-style: normal;
     font-weight: bold;
     font-size: 7rem;
-    line-height: 2rem;
+    line-height: 111px;
     text-align: center;
     color: #9c27b0;
     font-style: italic;
-    line-height: 400px;
-    height: 30vh;
+    height: 13vh;
   }
   
   @media (max-width: 768px) {
@@ -576,7 +575,7 @@ html {
   @media (max-width: 768px) {
     .house {
       width: 90rem;
-      height: 30rem;
+      height: 27rem;
       position: relative;
       top: 5rem;
     }
@@ -608,7 +607,7 @@ html {
   @media (max-width: 768px) {
     .text-house {
       font-size: 2rem;
-      height: 70rem;
+      height: 23rem;
       width: 30rem;
     }
   }
@@ -634,7 +633,11 @@ html {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  
+  @media (max-width: 768px) {
+    .text-house {
+      height: 75rem;
+    }
+  }
   @media (max-width: 375px) {
     .house-and-text {
       display: -webkit-box;
@@ -667,7 +670,7 @@ html {
   flex-direction: column;
   box-sizing: border-box;
   height: 34vh;
-  width: 28vw;
+  width: 61vw;
   font-size: 2.5rem;
   font-family: sans-serif;
   border-radius: 5rem; 
